@@ -4,6 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build.mjs"
+    "build": "node build.mjs",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "jsdom": "^31.0.1"
   }
 }
