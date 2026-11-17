@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="Il tuo percorso Sleep Reset Protocol, un passo alla volta.">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Sleep Reset — Il tuo percorso</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navigazione principale">
+      <a class="brand" href="#oggi" aria-label="Sleep Reset, vai alla home"><span class="brand-mark">sr<span>·</span></span><span class="brand-name">sleep reset<small>IL TUO PERCORSO</small></span></a>
+      <div class="sidebar-label">IL MIO SPAZIO</div>
+      <nav class="main-nav">
+        <button class="nav-link active" data-page="oggi"><span class="nav-icon">◷</span> Oggi</button>
+        <button class="nav-link" data-page="percorso"><span class="nav-icon">↗</span> Il percorso</button>
+        <button class="nav-link" data-page="diario"><span class="nav-icon">▤</span> Diario del sonno</button>
+        <button class="nav-link" data-page="messaggi"><span class="nav-icon">✳</span> I miei messaggi <i class="unread-dot"></i></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="coach-mini"><div class="avatar coach-avatar">DT</div><div><strong>Daniele</strong><span>Il tuo coach</span></div><span class="online-dot"></span></div>
+        <button class="nav-link" data-page="profilo"><span class="nav-icon">⚙</span> Profilo e impostazioni</button>
+        <div class="sidebar-foot">Un passo alla volta. <span>✳</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">sr<span>·</span></span><span>sleep reset</span></div>
+        <div class="topbar-context"><span class="context-dot"></span> IL TUO PERCORSO · GIORNO 08 / 30</div>
+        <div class="topbar-actions"><button class="icon-btn" aria-label="Notifiche" title="Notifiche">♧<i class="notification-dot"></i></button><button class="language-toggle" id="languageToggle" aria-label="Switch language"><span data-lang="it">IT</span><span data-lang="en">EN</span></button><button class="admin-switch" id="adminSwitch"><span class="admin-spark">✳</span><span class="admin-label">Vista professionista</span><span class="switch-knob"></span></button><button class="avatar user-avatar" id="userAvatar" type="button" aria-label="Esci dall’account">MC</button></div>
+      </header>
+
+      <section class="client-view" id="clientView">
+        <div class="page active" id="page-oggi">
+          <div class="welcome-row"><div><p class="eyebrow">MARTEDÌ 17 NOVEMBRE 2026 <span class="eyebrow-line"></span></p><h1>Buongiorno, Martina<span class="wave">✳</span></h1><p class="subheading">Non serve fare tutto. Basta il prossimo passo.</p></div><div class="day-stamp"><span>GIORNO</span><strong>08</strong><small>di 30</small></div></div>
+          <div class="hero-card"><div class="hero-copy"><span class="pill pill-light"><span class="live-pulse"></span> SETTIMANA 2 <span class="pill-sep">·</span> IL LETTO TORNA A CASA SUA</span><h2>Il ritmo si costruisce<br>una notte alla volta.</h2><p>Il tuo obiettivo di questa settimana è dare al corpo un orario stabile per ripartire.</p><button class="text-link light-link" data-goto="percorso">Scopri la tua settimana <span>↗</span></button></div><div class="hero-art" aria-hidden="true"><div class="moon-orbit"></div><div class="moon">☾</div><span class="star star-a">✳</span><span class="star star-b">·</span><span class="star star-c">✳</span><div class="art-hill hill-back"></div><div class="art-hill hill-front"></div><div class="art-caption">IL SONNO NON SI CERCA.<br><b>SI PREPARA.</b></div></div></div>
+          <div class="stats-grid"><article class="stat-card"><div class="stat-icon streak-icon">✳</div><div class="stat-content"><span class="stat-label">PASSI COMPLETATI</span><strong id="completedStat">12 <small>/ 16</small></strong><span class="stat-foot">Questa settimana</span></div><div class="mini-progress"><svg viewBox="0 0 42 42"><circle class="ring-bg" cx="21" cy="21" r="16"/><circle class="ring-progress" id="weekRing" cx="21" cy="21" r="16"/></svg><span id="weekPercent">75%</span></div></article><article class="stat-card"><div class="stat-icon moon-icon">☾</div><div class="stat-content"><span class="stat-label">EFFICIENZA DEL SONNO</span><strong>82<small>%</small></strong><span class="stat-foot"><span class="trend-up">↗ 6%</span> rispetto alla prima settimana</span></div><div class="sparkline" aria-label="Andamento positivo"><svg viewBox="0 0 100 40"><path d="M2 32 C16 25 15 27 27 29 S43 15 54 22 S69 12 79 17 S89 5 98 6"/><circle cx="98" cy="6" r="3"/></svg></div></article><article class="stat-card coach-stat"><div class="stat-icon coach-stat-icon">✉</div><div class="stat-content"><span class="stat-label">DAL TUO COACH</span><strong class="coach-stat-title">Un consiglio per te</strong><span class="stat-foot">Aggiornato ieri · 2 min fa</span></div><button class="circle-arrow" id="openCoachNote" aria-label="Leggi il consiglio">↗</button></article></div>
+          <div class="content-grid"><section class="today-section"><div class="section-heading"><div><p class="eyebrow">IL TUO PIANO DI OGGI</p><h2>Piccole cose, buon ritmo.</h2></div><span class="task-count" id="taskCount">1 di 3 fatti</span></div><div class="task-list" id="taskList"></div><button class="all-tasks-link" data-goto="percorso">Vedi tutti gli obiettivi <span>→</span></button></section><aside class="sleep-card"><div class="section-heading compact-heading"><div><p class="eyebrow">IL TUO DIARIO</p><h2>La notte scorsa</h2></div><span class="sleep-date">16 NOV</span></div><div class="sleep-score"><div class="score-ring"><div><strong>7<span>h</span> 12<span>m</span></strong><small>tempo a letto</small></div></div><div class="score-caption"><span class="score-dot"></span> Una notte in più, un dato in più</div></div><div class="sleep-details"><div><span>Per addormentarti</span><strong>22 min</strong></div><div><span>Risvegli notturni</span><strong>2 volte</strong></div><div><span>Come ti senti?</span><strong class="mood">Abbastanza bene <span>◡</span></strong></div></div><button class="outline-btn" id="openDiary">＋ Aggiungi la notte</button></aside></div>
+          <section class="bottom-banner"><span class="banner-star">✳</span><p><strong>Le notti difficili fanno parte del percorso.</strong><br>Non sono un passo indietro: sono informazioni utili. Condividile nel diario quando vuoi.</p><button class="text-link" data-goto="diario">Apri il diario <span>→</span></button></section>
+        </div>
+
+        <div class="page" id="page-percorso"><div class="page-head"><p class="eyebrow">IL TUO PERCORSO · 30 GIORNI</p><h1>Ogni passo conta.</h1><p class="subheading">Quattro settimane per ritrovare il tuo ritmo, con il supporto di Daniele.</p></div><div class="journey-summary"><div><span class="stat-label">IL TUO AVANZAMENTO</span><strong>8 <small>giorni completati su 30</small></strong></div><div class="journey-track"><span style="width:27%"></span></div><span class="journey-percent">27%</span></div><div class="week-list" id="weekList"></div><div class="safety-note"><span>✳</span><p><strong>Un promemoria importante</strong><br>Questo percorso è educativo e comportamentale: non sostituisce il parere del tuo medico. Non modificare mai farmaci senza parlarne con lui.</p></div></div>
+
+        <div class="page" id="page-diario"><div class="page-head"><p class="eyebrow">OSSERVA, SENZA GIUDICARE</p><h1>Diario del sonno.</h1><p class="subheading">Ogni annotazione aiuta te e Daniele a capire il tuo ritmo. Non esistono notti “sbagliate”.</p></div><div class="diary-top"><div class="diary-chart-card"><div class="section-heading"><div><p class="eyebrow">ULTIMI 7 GIORNI</p><h2>Il tempo a letto</h2></div><span class="chart-legend"><i></i> ore</span></div><div class="chart-wrap"><div class="chart-y"><span>9h</span><span>6h</span><span>3h</span></div><div class="chart-main"><div class="chart-gridlines"><i></i><i></i><i></i></div><svg class="diary-chart" viewBox="0 0 620 150" preserveAspectRatio="none" role="img" aria-label="Grafico del tempo a letto negli ultimi sette giorni"><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#9bc5b2" stop-opacity=".35"/><stop offset="1" stop-color="#9bc5b2" stop-opacity="0"/></linearGradient></defs><path class="chart-area" d="M10 90 C48 84 54 55 96 60 S143 80 181 69 S224 45 267 52 S311 93 353 74 S397 62 439 57 S482 40 525 49 S577 37 610 39 L610 145 L10 145Z"/><path class="chart-line" d="M10 90 C48 84 54 55 96 60 S143 80 181 69 S224 45 267 52 S311 93 353 74 S397 62 439 57 S482 40 525 49 S577 37 610 39"/><circle cx="610" cy="39" r="5" class="chart-point"/></svg><div class="chart-days"><span>11 nov</span><span>12 nov</span><span>13 nov</span><span>14 nov</span><span>15 nov</span><span>16 nov</span><span>oggi</span></div></div></div></div><div class="diary-insight"><span class="insight-icon">✳</span><p><span class="eyebrow">UN DATO, NON UN GIUDIZIO</span><strong>Il tuo orario di risveglio è più regolare.</strong><small>Negli ultimi 7 giorni, la sveglia ha variato di soli 18 minuti.</small></p></div></div><div class="section-heading diary-entries-heading"><div><p class="eyebrow">I TUOI APPUNTI</p><h2>Le ultime notti</h2></div><button class="primary-btn" id="openDiary2">＋ Registra una notte</button></div><div class="diary-entries" id="diaryEntries"></div></div>
+
+        <div class="page" id="page-messaggi"><div class="page-head"><p class="eyebrow">IN CONTATTO CON DANIELE</p><h1>I tuoi messaggi.</h1><p class="subheading">Uno spazio sicuro per condividere dubbi, progressi e domande sul tuo percorso.</p></div><div class="message-wrap"><div class="message-date">LUNEDÌ 16 NOVEMBRE</div><div class="message-bubble coach-message"><div class="message-author"><div class="avatar coach-avatar">DT</div><span>Daniele <small>Il tuo coach · 18:42</small></span></div><p>Ciao Martina! Ho visto il tuo diario della settimana: il risveglio sta diventando più regolare, ottimo lavoro. Questa settimana proviamo a tenere la sveglia alle 7:00 anche nel weekend. Come ti sembra?</p><span class="message-reaction">✳ Ti ha fatto piacere</span></div><div class="message-bubble user-message"><p>Mi sembra fattibile! La luce al mattino mi sta aiutando più di quanto pensassi.</p><small>Martina · 19:05</small></div><div class="message-compose"><textarea id="messageInput" placeholder="Scrivi un messaggio a Daniele…" rows="1" aria-label="Scrivi un messaggio"></textarea><button id="sendMessage" class="send-btn" aria-label="Invia messaggio">↑</button></div><p class="message-disclaimer">Per urgenze o questioni mediche, contatta il tuo medico o i servizi di emergenza.</p></div></div>
+
+        <div class="page" id="page-profilo"><div class="page-head"><p class="eyebrow">IL TUO SPAZIO PERSONALE</p><h1>Profilo e impostazioni.</h1><p class="subheading">Gestisci le tue preferenze per il percorso.</p></div><div class="profile-card"><div class="profile-main"><div class="avatar profile-avatar">MC</div><div><h2>Martina C.</h2><p>Nel percorso dal 10 novembre 2026</p></div><button class="outline-btn" id="editProfile">Modifica</button></div><div class="profile-row"><span>Coach</span><strong>Daniele Turriziani, farmacista <span class="verified">✓</span></strong></div><div class="profile-row"><span>Promemoria</span><strong>Ogni sera alle 21:30</strong><button class="toggle on" aria-label="Disattiva promemoria"><span></span></button></div><div class="profile-row"><span>Privacy e dati</span><strong class="privacy-link">Consulta l'informativa →</strong></div></div><div class="safety-note"><span>♡</span><p><strong>I tuoi dati sono personali.</strong><br>Le informazioni del diario sono condivise solo con il professionista che ti segue nel percorso.</p></div><button class="logout-btn">Esci dall'app</button></div>
+      </section>
+
+      <section class="admin-view" id="adminView" hidden>
+        <div class="admin-header"><div><p class="eyebrow">SPAZIO PROFESSIONISTA <span class="admin-status">● ONLINE</span></p><h1>Il tuo studio, Daniele.</h1><p class="subheading">Tieni d'occhio i percorsi e accompagna ogni persona al suo prossimo passo.</p></div><button class="primary-btn" id="addClientBtn">＋ Aggiungi cliente</button></div>
+        <div class="admin-kpis"><article><span>CLIENTI ATTIVI</span><strong>8</strong><small><i>↑</i> 2 questo mese</small></article><article><span>DA RICONTATTARE</span><strong>3</strong><small class="kpi-warn">Un check-in può fare la differenza</small></article><article><span>PASSI COMPLETATI</span><strong>76<small>%</small></strong><small>media dei percorsi attivi</small></article><article><span>PROSSIMI INCONTRI</span><strong>2</strong><small>Il prossimo: oggi, 15:30</small></article></div>
+        <div class="admin-main-grid"><section class="clients-panel"><div class="section-heading"><div><p class="eyebrow">PANORAMICA PERCORSI</p><h2>I tuoi clienti</h2></div><button class="filter-btn" id="clientFilter">Tutti i percorsi⌄</button></div><div class="client-table-head"><span>CLIENTE</span><span>PROGRESSO</span><span>ULTIMA ATTIVITÀ</span><span>STATO</span><span></span></div><div id="clientList"></div></section><aside class="admin-side"><div class="attention-card"><div class="attention-top"><span class="attention-icon">↗</span><span class="attention-count">3 AZIONI</span></div><h3>Un piccolo check-in?</h3><p>Tre persone potrebbero apprezzare un tuo messaggio oggi.</p><div class="attention-person"><div class="avatar avatar-small">LB</div><span><strong>Luca B.</strong><small>4 giorni senza aggiornamenti</small></span><button class="mini-arrow" data-message="Luca B.">→</button></div><div class="attention-person"><div class="avatar avatar-small peach">GV</div><span><strong>Giulia V.</strong><small>Diario incompleto da 3 giorni</small></span><button class="mini-arrow" data-message="Giulia V.">→</button></div><button class="text-link" data-admin-action="reminders">Vedi tutti i promemoria →</button></div><div class="upcoming-card"><p class="eyebrow">IN AGENDA · OGGI</p><div class="appointment"><div class="appointment-time">15:30</div><div><strong>Martina C.</strong><span>Incontro · giorno 7</span></div><button class="mini-arrow" data-open-client="Martina C.">→</button></div><div class="appointment"><div class="appointment-time">17:00</div><div><strong>Paolo R.</strong><span>Incontro · giorno 14</span></div><button class="mini-arrow" data-open-client="Paolo R.">→</button></div></div></aside></div>
+        <div class="admin-bottom-note"><span>✳</span><p><strong>Uno spazio di supporto, non di diagnosi.</strong> Le informazioni registrate aiutano il confronto durante il percorso; le decisioni cliniche e farmacologiche restano in capo al medico curante.</p></div>
+      </section>
+    </main>
+    <nav class="mobile-nav" aria-label="Navigazione mobile"><button class="active" data-page="oggi"><span>◷</span>Oggi</button><button data-page="percorso"><span>↗</span>Percorso</button><button data-page="diario"><span>▤</span>Diario</button><button data-page="messaggi"><span>✳</span>Messaggi<i></i></button></nav>
+  </div>
+  <section class="auth-gate" id="authGate" aria-labelledby="authTitle">
+    <div class="auth-panel">
+      <a class="brand auth-brand" href="#"><span class="brand-mark">sr<span>·</span></span><span class="brand-name">sleep reset<small>IL TUO PERCORSO</small></span></a>
+      <button class="language-toggle auth-language" id="authLanguage" type="button" aria-label="Switch language"><span data-lang="it">IT</span><span data-lang="en">EN</span></button>
+      <p class="eyebrow" id="authEyebrow">IL TUO SPAZIO PERSONALE</p>
+      <h1 id="authTitle">Bentornato.</h1>
+      <p class="auth-intro" id="authIntro">Accedi per continuare il tuo percorso Sleep Reset.</p>
+      <div class="auth-tabs"><button type="button" class="auth-tab active" data-auth-mode="login">Accedi</button><button type="button" class="auth-tab" data-auth-mode="signup">Crea account</button></div>
+      <form id="authForm" class="auth-form">
+        <label class="auth-name-field" id="authNameField" hidden>Nome e cognome<input type="text" name="full_name" autocomplete="name" maxlength="120" placeholder="Il tuo nome"></label>
+        <label>Email<input type="email" name="email" autocomplete="email" inputmode="email" required placeholder="nome@email.it"></label>
+        <label>Password<input type="password" name="password" autocomplete="current-password" minlength="8" required placeholder="Almeno 8 caratteri"></label>
+        <label class="auth-consent-field" id="authConsentField" hidden><input type="checkbox" id="authConsent"><span>Acconsento al trattamento dei dati del sonno per il percorso e ho letto l’<a href="https://sleepreset-daniele.netlify.app/privacy" target="_blank" rel="noopener">informativa privacy</a>.</span></label>
+        <p class="auth-error" id="authError" role="alert" hidden></p>
+        <button class="primary-btn auth-submit" id="authSubmit">Accedi</button>
+      </form>
+      <p class="auth-privacy">Accesso protetto. I tuoi dati del percorso sono visibili solo a te e al professionista che ti segue.</p>
+      <p class="auth-setup" id="authSetup" hidden></p>
+    </div>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Chiudi">×</button><div id="modalContent"></div></section></div>
+  <script src="/supabase-config.js" defer></script>
+  <script src="/supabase-client.js" defer></script>
+  <script src="/app.js" defer></script>
+  <script src="/supabase-live-chat.js" defer></script>
+</body>
+</html>
