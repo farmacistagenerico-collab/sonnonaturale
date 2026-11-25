@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - arena/068d500d-sonnonaturale
+      - main
   workflow_dispatch:
 
 permissions:
