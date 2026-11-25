@@ -74,4 +74,4 @@ setLanguage=function(next){priorSetLanguage(next);if(authInitialized)updateAuthC
 renderTasks();renderWeeks();renderEntries();renderClients();
 $('#languageToggle').addEventListener('click',()=>setLanguage(language==='it'?'en':'it'));$('#authLanguage').addEventListener('click',()=>setLanguage(language==='it'?'en':'it'));setLanguage(language);
 initializeSupabaseAuth();
-if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('/sw.js').catch(()=>{});
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register(new URL('sw.js',document.baseURI)).catch(()=>{});

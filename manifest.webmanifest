@@ -3,12 +3,12 @@
   "short_name": "Sleep Reset",
   "description": "Il tuo percorso Sleep Reset Protocol, un passo alla volta.",
   "lang": "it-IT",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#f7f7f2",
   "theme_color": "#f7f7f2",
   "icons": [
-    { "src": "/assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    { "src": "./assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
 }
