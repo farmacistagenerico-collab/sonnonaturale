@@ -1,6 +1,6 @@
-# Sleep Reset Protocol — companion app
+# Sonno Naturale — app
 
-Mobile-first bilingual (Italian/English) PWA for the Sleep Reset Protocol. The language preference is saved to the user's Supabase profile. It includes client goals, a 30-day protocol guide, sleep diary and secure coach messaging, plus a coach dashboard for assigned clients, goal assignment and personalised supportive notes. User-written messages and notes remain in the language entered; they are not machine-translated.
+Mobile-first bilingual (Italian/English) PWA for Sonno Naturale (Natural Sleep in English). The language preference is saved to the user's Supabase profile. It includes client goals, a 30-day protocol guide, sleep diary and secure coach messaging, plus a coach dashboard for assigned clients, goal assignment and personalised supportive notes. User-written messages and notes remain in the language entered; they are not machine-translated.
 
 ## Build and hosting
 
@@ -18,7 +18,7 @@ Then open `http://localhost:4173`. For the Arena live preview, use the same stat
 
 ## Prototype boundaries
 
-The app uses Supabase email/password sign-in and role-aware client/coach screens. RLS-protected calls cover assigned goals, completions, sleep entries, coach notes, messages and consent records. The browser uses only the public publishable key; it never receives a `service_role` key. Registration includes acknowledgement of the linked privacy notice, whose final wording and lawful basis must be reviewed before collecting real health data. Coach promotion and client assignments are currently managed in Supabase; invitation/onboarding, password recovery, push reminders, appointment booking and full retention/deletion workflows remain future work. Test with separate client and coach accounts before use. This is not a medical service: clinical and medication decisions remain with the patient's physician.
+The app uses Supabase email/password sign-in and role-aware client/coach screens. RLS-protected calls cover assigned goals, completions, sleep entries, coach notes, messages and consent records. The browser uses only the public publishable key; it never receives a `service_role` key. Registration includes acknowledgement of the linked privacy notice, whose final wording and lawful basis must be reviewed before collecting real health data. The English interface is available, but the linked privacy notice is currently Italian-only; prepare and review an English notice before accepting real English-speaking participants. Coach promotion and client assignments are currently managed in Supabase; invitation/onboarding, password recovery, push reminders, appointment booking and full retention/deletion workflows remain future work. Test with separate client and coach accounts before use. This is not a medical service: clinical and medication decisions remain with the patient's physician.
 
 ## Supabase foundation
 

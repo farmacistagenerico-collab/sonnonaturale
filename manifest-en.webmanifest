@@ -1,0 +1,14 @@
+{
+  "name": "Natural Sleep",
+  "short_name": "Natural Sleep",
+  "description": "Your Natural Sleep journey, one step at a time.",
+  "lang": "en-GB",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f7f2",
+  "theme_color": "#f7f7f2",
+  "icons": [
+    { "src": "./assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

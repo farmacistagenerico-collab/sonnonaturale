@@ -1,7 +1,7 @@
 {
-  "name": "Sleep Reset Protocol",
-  "short_name": "Sleep Reset",
-  "description": "Il tuo percorso Sleep Reset Protocol, un passo alla volta.",
+  "name": "Sonno Naturale",
+  "short_name": "Sonno Naturale",
+  "description": "Il tuo percorso Sonno Naturale, un passo alla volta.",
   "lang": "it-IT",
   "start_url": "./",
   "scope": "./",

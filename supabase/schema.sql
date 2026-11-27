@@ -1,4 +1,4 @@
--- Sleep Reset Protocol — initial Supabase schema
+-- Sonno Naturale — initial Supabase schema
 -- Apply in the Supabase SQL Editor for a NEW project. Review before production use.
 -- No service_role key is ever used by the browser app.
 

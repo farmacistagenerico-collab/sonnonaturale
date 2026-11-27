@@ -87,6 +87,14 @@ function fixture(){
 const waitFor=async(predicate,message)=>{for(let i=0;i<100;i++){if(predicate())return;await new Promise(r=>setTimeout(r,10))}throw new Error(`Timed out: ${message}`)};
 async function login(f,email){const w=f.window;w.document.querySelector('[name="email"]').value=email;w.document.querySelector('[name="password"]').value='Pass12345!';w.document.querySelector('#authForm').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await waitFor(()=>w.document.querySelector('#authGate').hidden,'auth gate to close')}
 
+test('Sonno Naturale branding and app metadata switch to English with the language control',()=>{
+ const f=fixture(),w=f.window;
+ assert.match(w.document.title,/Sonno Naturale/);assert.match(w.document.querySelector('.brand-name').textContent,/Sonno Naturale/);assert.equal(w.document.querySelector('#appManifest').getAttribute('href'),'./manifest.webmanifest');
+ w.document.querySelector('#languageToggle').click();
+ assert.equal(w.document.documentElement.lang,'en');assert.match(w.document.title,/Natural Sleep/);assert.match(w.document.querySelector('.brand-name').textContent,/Natural Sleep/);assert.equal(w.document.querySelector('.brand-mark').firstChild.nodeValue,'NS');assert.equal(w.document.querySelector('#appManifest').getAttribute('href'),'./manifest-en.webmanifest');assert.match(w.document.querySelector('meta[name="description"]').content,/Natural Sleep/);assert.match(w.document.querySelector('#authIntro').textContent,/Natural Sleep journey/);assert.match(w.document.querySelector('#page-diario h1').textContent,/Sleep diary/);
+ w.document.querySelector('#languageToggle').click();assert.equal(w.document.documentElement.lang,'it');assert.match(w.document.title,/Sonno Naturale/);f.dom.window.close();
+});
+
 test('client login, goal completion, sleep diary and secure message use Supabase REST',async()=>{
  const f=fixture(),{window:w,db,requests}=f;
  await login(f,'client@example.test');

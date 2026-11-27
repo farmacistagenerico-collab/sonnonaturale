@@ -1,4 +1,4 @@
-name: Deploy Sleep Reset to GitHub Pages
+name: Deploy Sonno Naturale to GitHub Pages
 
 on:
   push:

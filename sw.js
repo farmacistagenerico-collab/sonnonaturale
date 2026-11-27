@@ -1,6 +1,6 @@
-const CACHE='sleep-reset-v9';
+const CACHE='sleep-reset-v10';
 const BASE=new URL('./',self.location.href);
-const CORE=['./','index.html','styles.css','app.js','manifest.webmanifest','assets/icon.svg','supabase-config.js','supabase-client.js','supabase-live-chat.js'].map(path=>new URL(path,BASE).href);
+const CORE=['./','index.html','styles.css','app.js','manifest.webmanifest','manifest-en.webmanifest','assets/icon.svg','supabase-config.js','supabase-client.js','supabase-live-chat.js'].map(path=>new URL(path,BASE).href);
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('sleep-reset-')&&key!==CACHE).map(key=>caches.delete(key))))));
 self.addEventListener('fetch',event=>{
