@@ -16,3 +16,11 @@
 button.avatar{border:0;padding:0;cursor:pointer}
 .privacy-link a{color:inherit;text-decoration:none}.privacy-link a:hover{text-decoration:underline}
 .coach-modal-messages{max-height:42vh;overflow:auto;display:grid;gap:9px;margin:14px 0;padding:3px}.coach-modal-messages .message-bubble{max-width:94%}.coach-modal-messages .user-message{justify-self:end}
+
+/* Accessibility contrast pass: secondary copy and labels on light surfaces. */
+:root{--text-muted-accessible:#55645a;--text-positive-accessible:#285e4c;--text-warning-accessible:#78542d;--text-danger-accessible:#8a4e3b}
+.brand-name small,.sidebar-label,.eyebrow,.stat-label,.nav-link:not(.active),.coach-mini span:not(.online-dot),.sidebar-foot,.topbar-context,.subheading,.day-stamp,.stat-content>strong small,.stat-foot,.task-count,.task-copy span,.sleep-date,.score-ring small,.score-caption,.sleep-details div,.bottom-banner p,.journey-summary strong small,.journey-percent,.week-number,.week-description,.week-progress,.safety-note,.chart-legend,.chart-y,.chart-days,.diary-insight small,.entry-hours,.entry-mood,.message-date,.message-author small,.message-reaction,.user-message small,.message-disclaimer,.profile-main p,.profile-row,.privacy-link,.admin-kpis article>span,.admin-kpis article>small,.client-table-head,.client-name small,.client-progress small,.activity,.attention-count,.attention-card>p,.attention-person small,.appointment span,.admin-bottom-note,.modal p,.form-field label,.form-hint,.detail-stat span,.secondary-btn,.auth-intro,.auth-tab:not(.active),.auth-form label,.auth-form input::placeholder,.auth-privacy,.auth-setup,.empty-state,.empty-state small,.empty-chart,.live-goal-list>strong,.live-goal-row,.live-goal-row small,.goal-editor summary,.message-author small,.admin-switch:not([aria-pressed="true"]),.filter-btn,.mobile-nav button:not(.active),.language-toggle,.circle-arrow,.outline-btn{color:var(--text-muted-accessible)!important}
+.status-pill.good,.sleep-details .mood,.admin-status,.trend-up,.privacy-link a,.entry-link{color:var(--text-positive-accessible)!important}
+.status-pill.attention,.admin-kpis .kpi-warn{color:var(--text-warning-accessible)!important}
+.logout-btn{color:var(--text-danger-accessible)!important}
+.week-card.complete .week-number{background:#3c6e52}
